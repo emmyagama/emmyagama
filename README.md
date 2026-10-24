@@ -2,7 +2,7 @@
 <img src="assets/portrait-240.jpg" width="132" alt="Emmanuel Agama">
 <h1>Emmanuel Agama</h1>
 <p>Independent AI evaluation · Abuja, Nigeria</p>
-<p><a href="https://agamanexus.com">agamanexus.com</a> &nbsp;·&nbsp; <a href="mailto:emmanuel@agamanexus.com">Email</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/emmy-agama">LinkedIn</a> &nbsp;·&nbsp; <a href="https://emmyagama.substack.com/">Substack</a></p>
+<p><a href="https://agamanexus.com">agamanexus.com</a> &nbsp;·&nbsp; <a href="mailto:emmanuel@agamanexus.com">Email</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/emmanuelagama">LinkedIn</a> &nbsp;·&nbsp; <a href="https://emmyagama.substack.com/">Substack</a></p>
 </div>
 
 ---
