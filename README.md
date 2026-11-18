@@ -1,32 +1,39 @@
 <div align="center">
 <img src="assets/portrait-240.jpg" width="132" alt="Emmanuel Agama">
 <h1>Emmanuel Agama</h1>
-<p>Independent AI evaluation · Abuja, Nigeria</p>
+<p>Founder, Agama Nexus · AI Transformation Consultant</p>
 <p><a href="https://agamanexus.com">agamanexus.com</a> &nbsp;·&nbsp; <a href="mailto:emmanuel@agamanexus.com">Email</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/emmanuelagama">LinkedIn</a> &nbsp;·&nbsp; <a href="https://emmyagama.substack.com/">Substack</a></p>
 </div>
 
 ---
 
-I measure whether AI systems answer correctly, and I publish the measurements even when they are unflattering.
+I build and evaluate AI workflows with evidence. My work ranges from reproducible AI evaluation to human-governed agent systems built on open protocols. I publish the methods, limitations, and failure cases—not just the successful demos.
 
-Most AI vendors show a demo. A demo proves an answer can exist; it does not tell you how often the answer is wrong. The work here is the other thing: build a fixed test set, run the system against it honestly, count the failures by class, and put the weak number on the same page as the good ones.
+## Current flagship: Transformation Workbench
 
-## The work behind everything else
+[Transformation Workbench](https://github.com/emmyagama/transformation-workbench)
+is a local, synthetic-data demonstration for evidence-linked process diagnosis. It combines read-only MCP tools, a local A2A workflow, deterministic reporting, and a human review pause.
 
-**[ng-health-reg-assistant](https://github.com/emmyagama/ng-health-reg-assistant)** — a question-answering assistant over eight public Nigerian health-regulation PDFs. It cites the document and section behind every claim, refuses when the corpus cannot answer, and blocks clinical questions outright.
+It performs no business-system writes and makes no production or savings claims.
 
-Fifty hand-built questions. Twenty-five answerable, twenty-five deliberately not. The raw model invented answers twice; the guardrails caught both, which is why the published hallucination rate is 0.000 rather than 0.000-on-the-shown-surface-only. Retrieval is the weak layer at recall@5 **0.379**, and that number is on the front of the README, not in an appendix.
+- [Repository and demo instructions](https://github.com/emmyagama/transformation-workbench)
+- [Technical contribution](https://github.com/emmyagama/transformation-workbench/blob/main/docs/product/technical-contribution.md)
+- [Case study](https://github.com/emmyagama/transformation-workbench/blob/main/docs/product/case-study.md)
+- [Video demo](COMING_SOON)
 
-Every published figure regenerates from a committed run, and one command checks the README against it. The method is written up for a non-specialist at [agamanexus.com/notes/how-i-measured-a-health-regulation-assistant](https://agamanexus.com/notes/how-i-measured-a-health-regulation-assistant/).
+## Evaluation work
+
+[ng-health-reg-assistant](https://github.com/emmyagama/ng-health-reg-assistant)
+is a question-answering assistant over public Nigerian health-regulation documents, with citations, refusal behavior, and a reproducible evaluation.
+
+In its published 50-question sample, retrieval recall@5 was **0.379**. The retrieval result is a known weakness; the guardrails caught two invented raw model answers, and the system refused all 25 unanswerable test questions.
 
 ## How I work
 
-| | |
-|---|---|
-| **Measurement before claims** | A number in a document must point at a file in a repository. If it cannot, it does not ship. |
-| **Failures are counted, not averaged away** | A wrong answer is attributed to the layer that caused it and keyed to a question id, so a fix can be falsifiable. |
-| **One named person** | The person who measures your system is the person who signs the report. No account managers, no handoffs. |
-| **No compliance claims** | I produce evidence. Your counsel interprets it. I do not promise that anything will pass. |
+- **Evidence over assertion:** important numbers should trace to a source or a reproducible run.
+- **Failures stay visible:** report weak results and failure categories, not just averages.
+- **Bounded systems:** keep tools narrow and consequential actions behind explicit human review.
+- **Useful technical education:** explain what developers can reproduce—and what the evidence does not establish.
 
 ## Selected repositories
 
